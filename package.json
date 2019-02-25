@@ -1,0 +1,21 @@
+{
+  "name": "language-tpl",
+  "main": "./lib/language-tpl",
+  "version": "0.1.0",
+  "description": "A proprietary markup language used in tpl documents",
+  "keywords": [
+    "syntax",
+    "highlighting",
+    "grammar"
+  ],
+  "activationCommands": {
+    "atom-workspace": "language-tpl:toggle"
+  },
+  "repository": "https://github.com/atom/language-tpl",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

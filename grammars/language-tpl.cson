@@ -1,0 +1,21 @@
+scopeName: 'text.html.tpl'
+name: 'TPL'
+fileTypes: ['tpl']
+limitLineLength: false
+patterns: [
+    {
+        comment: 'comment'
+        name: 'comment.line.tpl'
+        begin: '{\\*'
+        beginCaptures:
+            '0':
+                name: 'punctuation.definition.comment.begin.tpl'
+        end: '\\*}'
+        endCaptures:
+            '0':
+                name: 'punctuation.definition.comment.end.tpl'
+    }
+    {
+        include: 'text.html.basic'
+    }
+]
