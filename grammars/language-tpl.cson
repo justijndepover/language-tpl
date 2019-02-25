@@ -16,6 +16,60 @@ patterns: [
                 name: 'punctuation.definition.comment.end.tpl'
     }
     {
+        comment: 'constants'
+        match: '({\\$)([a-zA-Z0-9_]+)(\\|addslashes|\\|htmlentities|\\|length|\\|lowercase|\\|ltrim|\\|nl2br|\\|repeat:([0-9]?)|\\|rtrim|\\|shuffle|\\|stripslashes|\\|substring:([0-9]*):([0-9]*)|\\|trim|\\|truncate:([0-9]*)|\\|ucfirst|\\|ucwords|\\|uppercase)?(})'
+        captures:
+            1:
+                name: 'constant.numeric.tpl'
+            2:
+                name: 'constant.character.escape.tpl'
+            3:
+                name: 'constant.numeric.tpl'
+            4:
+                name: 'constant.character.escape.tpl'
+            5:
+                name: 'constant.character.escape.tpl'
+            6:
+                name: 'constant.character.escape.tpl'
+            7:
+                name: 'constant.character.escape.tpl'
+            8:
+                name: 'constant.numeric.tpl'
+    }
+    {
+        comment: 'options'
+        match: '({[\/]?option:)([a-zA-Z0-9_]+)(})'
+        captures:
+            1:
+                name: 'constant.numeric.tpl'
+            2:
+                name: 'constant.constant.character.escape.tpl'
+            3:
+                name: 'constant.numeric.tpl'
+    }
+    {
+        comment: 'iterations'
+        match: '({[\/]?iteration:)([a-zA-Z0-9_]+)(})'
+        captures:
+            1:
+                name: 'constant.numeric.tpl'
+            2:
+                name: 'constant.constant.character.escape.tpl'
+            3:
+                name: 'constant.numeric.tpl'
+    }
+    {
+        comment: 'includes'
+        match: '({[\/]?include=\\")([a-zA-Z0-9_.]+)(\\"})'
+        captures:
+            1:
+                name: 'constant.numeric.tpl'
+            2:
+                name: 'constant.character.escape.tpl'
+            3:
+                name: 'constant.numeric.tpl'
+    }
+    {
         include: 'text.html.basic'
     }
 ]
