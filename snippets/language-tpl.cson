@@ -1,0 +1,16 @@
+'.text.html.tpl':
+    '{iteration:iName}':
+        'prefix': 'iteration'
+        'body': '{iteration:${1:name}}${2:code}{/iteration:${1:name}}'
+    '{option:oName}':
+        'prefix': 'option'
+        'body': '{option:${1:name}}${2:code}{/option:${1:name}}'
+    '{$variable}':
+        'prefix': 'var'
+        'body': '{$${1:var}}'
+    '{include="file.tpl"}':
+        'prefix': 'include'
+        'body': '{include="${1:file.tpl}"}'
+    '{* comment *}':
+        'prefix': 'comment'
+        'body': '{* ${1:comment} *}'
