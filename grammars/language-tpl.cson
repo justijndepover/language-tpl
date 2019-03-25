@@ -17,7 +17,7 @@ patterns: [
     }
     {
         comment: 'constants'
-        match: '({\\$)([a-zA-Z0-9_]+)(\\|addslashes|\\|htmlentities|\\|length|\\|lowercase|\\|ltrim|\\|nl2br|\\|repeat:([0-9]?)|\\|rtrim|\\|shuffle|\\|stripslashes|\\|substring:([0-9]*):([0-9]*)|\\|trim|\\|truncate:([0-9]*)|\\|ucfirst|\\|ucwords|\\|uppercase)?(})'
+        match: '({\\$)([a-zA-Z0-9_]+)(\\|addslashes|\\|htmlentities|\\|length|\\|lowercase|\\|ltrim|\\|nl2br|\\|repeat:([0-9]?)|\\|rtrim|\\|shuffle|\\|stripslashes|\\|substring:([0-9]*):([0-9]*)|\\|trim|\\|truncate:([0-9]*)|\\|ucfirst|\\|ucwords|\\|uppercase|\\|currency)?(})'
         captures:
             1:
                 name: 'constant.numeric.tpl'
